@@ -73,5 +73,31 @@ print li.index(99)
 li.remove(99)
 print li
 
+print 99 in li
+
+#Dictionaries  store mappings
+dict = {}
+dict = {"parham":21, "mahdi":19}
+print dict["parham"]    #print 21
+
+print dict.values()     #21,19
+print dict.items()      #parham,mahdi
+
+21 in dict  #False
+"parham" in dict #True
+
+# dict["iman"] rise error
+dict.get("iman") #return None
+
+dict.get("iman",20) #yet iman is None but get  returns 20
+
+## Sets are like of list but can have no duplicate
+my_set = set([1,2,3,4,5])
+print my_set
+my_set.add(6)
+ras_set = set ([2,4,6,8])
+print my_set & ras_set  #2,4,6
+#can use -,^,<,>,<=,>= on sets
+
 
 

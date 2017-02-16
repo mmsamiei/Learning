@@ -3,7 +3,7 @@ import time
 
 server_socket = socket.socket()
 host = socket.gethostname()
-port = 12345
+port = 13
 server_socket.bind((host,port))
 
 server_socket.listen(5)

@@ -1,0 +1,16 @@
+#lang racket
+
+(define x 2) ; in the name of God! hello this is comment !
+
+(define y (+ x 2)) ; now y is 4 ! :)
+
+(define (bake flavor) ; name of function ins bake and flavor is an argumant 
+  (printf "Hello!\n")
+  (string-append flavor " pie"))
+
+(define (extract str) (substring str 4 7))
+
+(define plus
+  (lambda (x)
+    (lambda (y)
+      (+ y x))))

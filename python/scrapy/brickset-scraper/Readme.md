@@ -1,6 +1,6 @@
 # In The Name Of God
 
-dedicated to god.
+dedicated to God.
 
 tutorial link: https://www.digitalocean.com/community/tutorials/how-to-crawl-a-web-page-with-scrapy-and-python-3
 

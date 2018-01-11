@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <video id="video_player" controls="controls" autoplay="false" loop="true" poster="http://www.gifgif.ir/upload/uploaded/product/2iByJATIKFU053.jpg">
+        <source src="https://hw18.asset.aparat.com/aparat-video/5ffe6e24dd5ef004854e6c8ce0e75a778660665-144p__15177.mp4" type="video/ogg">
+        <source src="https://hw18.asset.aparat.com/aparat-video/5ffe6e24dd5ef004854e6c8ce0e75a778660665-144p__15177.mp4" type="video/mp4">
+        your browser can't show this video!
+    </video>
+    <div id="div_id">
+        ssss
+    </div>
+    <script>
+        alert("SALAM");
+        var video_tag = document.getElementById("video_player");
+        document.write("@@@@");
+        video_tag.addEventListener("volumechange", function () {
+            var div_tag = document.getElementById("div_id");
+            div_tag.innerHTML="You changed the volume!";
+        })
+    </script>
+</body>
+</html>

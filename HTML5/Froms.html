@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>math grade:</label>
+    <input type="number" name="math-grade" min="0" max="20" step="0.5">
+    <br>
+    <label>physics grade:</label>
+    <input type="number" name="physics-grade" min="0" max="20" step="0.5">
+    <br>
+    <label>birthday date</label>
+    <input type="date" name="birthday_data">
+    <label>your favorite color:</label>
+    <input type="color" name="favorite-color">
+    <input type="text" list="team_list" name="favorite_team">
+
+    <datalist id="team_list">
+        <option label="dortmund" value="bvb"></option>
+        <option label="real madrid" value="rma"></option>
+        <option label="barcelona" value="fcb"></option>
+        <option label="liverpool" value="liv" ></option>
+        <option label="other" value="etc"></option>
+    </datalist>
+
+    <br>
+    <label>your personal code!</label>
+    <input type="text" name="personal-code" pattern="[A-z]{3}" required="true" >
+
+
+    <button>
+        click Me!
+    </button>
+
+    <input type="submit">
+</form>
+    <div id="divid">
+    </div>
+
+    <script>
+        var btn_element = document.getElementsByTagName("button")[0];
+
+        var div_elemet = document.getElementById("divid");
+
+        btn_element.addEventListener("click",function () {
+        })
+    </script>
+</body>
+</html>

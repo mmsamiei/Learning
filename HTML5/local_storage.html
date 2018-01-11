@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+you have visited this page <span> </span> times!
+consider that when you close your tab this goes not to 0 !
+<script>
+    if(localStorage.visited_times){
+        localStorage.visited_times = Number(localStorage.visited_times)+1;
+    }
+    else {
+        localStorage.visited_times = 1;
+    }
+    var my_span = document.getElementsByTagName("span")[0];
+    my_span.innerHTML = localStorage.visited_times;
+</script>
+</body>
+</html>
